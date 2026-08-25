@@ -1,7 +1,7 @@
 #!/bin/bash
-MAC="D4:E9:F4:B1:57:62"
+MAC="<MAC>"
 
-for pin in $(seq -w 0000 9999); do
+for pin in $(seq -w 000000 999999); do
   echo "trying: $pin"
   bluetoothctl remove $MAC 2>/dev/null
 
